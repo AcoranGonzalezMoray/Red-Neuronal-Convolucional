@@ -80,16 +80,35 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 | --------------- | --------------------------------|
 | 1               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/1-(Con%20AUG).png)|
 
-////AQUI IRIA LA CONCLUCION
+### ANALISIS GRAFICA
 
+### RESTO DE GRAFICAS QUE PRESENTAN CLARAMENTE UN MODELO DE OVERFITING
+- Si miramos el comportamiento general de estas gráficas vemos que son el característico perfecto de un modelo que presenta Overfitting. Por un lado la Accuracy de los datos de entrenamiento aumenta linealmente con las epochs, hasta alcanzar casi el 100%, mientras que la Accuracy de los datos de validación se detiene alrededor del 80% y a partir de aquí se mantiene constante a lo largo de las epochs.
+
+¿Cómo lo evitamos?
+- Entrenamiento con más datos, es posible que esta técnica no funcione todas las veces. Básicamente, ayuda al modelo a identificar mejor la señal. Pero en algunos casos, el aumento de los datos también puede significar alimentar más ruido al modelo. Cuando entrenamos el modelo con más datos, debemos asegurarnos de que los datos estén limpios y libres de aleatoriedad e inconsistencias.
+
+- Detención anticipada, cuando el modelo se está entrenando, puedes medir el rendimiento del modelo en función de cada iteración. Podemos hacer esto hasta un punto en el que las iteraciones mejoren el rendimiento del modelo. Después de esto, el modelo sobreajusta los datos de entrenamiento a medida que la generalización se debilita después de cada iteración. Entonces, básicamente, la detención anticipada significa detener el proceso de entrenamiento antes de que el modelo pase el punto donde el modelo comienza a sobreajustarse a los datos de entrenamiento. Esta técnica se utiliza principalmente en el aprendizaje profundo.
 
 
 ### Terminos y Notas del Código
+
 <li>Conv2D</li>
+
 <li>MaxPooling</li>
+
 <li>Dropout</li>
-<li>Overfiting</li>
+
+<li>Overfiting, En resumen, con Overfittingo sobreajuste, nos referimos a lo que le sucede a un modelo cuando este modela los datos de entrenamiento demasiado bien, aprendiendo detalles de estos que no son generales. Esto es debido a que sobreentrenamos nuestro modelo y este estará considerando como válidos solo los datos idénticos a los de nuestro conjunto de entrenamiento, incluidos sus defectos (también llamado ruido en nuestro contexto).
+
+Es decir, nos encontramos en la situación que el modelo puede tener una baja tasa de error de clasificación para los datos de entrenamiento, pero no se generaliza bien a la población general de datos en los que estamos interesados en realidad. Es evidente que, en general, esta situación presenta un impacto negativo en la eficiencia del modelo cuando este se usa para inferencia con datos nuevos. Por ello es muy importante evitar estar en esta situación y de aquí la utilidad de reservar una parte de datos de entrenamiento como datos de validación para poder detectar esta situación.
+</li>
+
 <li>UnderFiting</li>
+
+### Autores
+<li>Acorán González Moray</li>
+<li>Vialard </li>
 
 
 
