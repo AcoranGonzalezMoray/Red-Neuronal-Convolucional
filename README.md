@@ -70,3 +70,23 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 
 
 ## Conclusiones
+- Bien de todos los resultados anteriores nos quedamos con:
+|Nº Conf| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
+|-------|-----------------|---------------------------------|-------------------|-----------------------|-----------------------------|--------------|
+|1      | 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9942**    |
+
+|Configuración    |Graficas                         |
+| --------------- | --------------------------------|
+| 1               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/1-(Con%20AUG).png)|
+
+////AQUI IRIA LA CONCLUCION
+
+
+
+
+
+
+
+
+
+
