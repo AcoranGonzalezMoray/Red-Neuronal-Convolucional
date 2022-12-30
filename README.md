@@ -37,29 +37,34 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 
 - Teniendo en cuenta lo anterior procedemos a mostrar los resultados:
 ### ORIGINAL:
-| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
-| --------------- | --------------------------------|-------------------|-----------------------|-----------------------------|--------------|
-| 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9715**    |
-| 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9767**    |
-| 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9603**    |
+|Nº Conf| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
+|-------|-----------------| --------------------------------|-------------------|-----------------------|-----------------------------|--------------|
+|1      | 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9715**    |
+|2      | 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9767**    |
+|3      | 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9603**    |
 
 
 |Configuración    |Graficas                         |
 | --------------- | --------------------------------|
-| 5               |![Image text]()                                   |
-| 6               |![Image text]()                                   |
-| 7               |![Image text]()                                   |
+| 1               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/1-(SIN%20AUG).png)|
+| 2               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/2-(SIN%20AUG).png)|
+| 3               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/3-(SIN%20AUG).png)| 
 
 
 
 ### DATA AUGMENTATION:
-| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
-| --------------- | --------------------------------|-------------------|-----------------------|-----------------------------|--------------|
-| 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9942**    |
-| 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9660**    |
-| 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9658**    |
+|Nº Conf| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
+|-------|-----------------|---------------------------------|-------------------|-----------------------|-----------------------------|--------------|
+|1      | 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9942**    |
+|2      | 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9660**    |
+|3      | 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9658**    |
 
 
+|Configuración    |Graficas                         |
+| --------------- | --------------------------------|
+| 1               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/1-(Con%20AUG).png)|
+| 2               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/2-(Con%20AUG).png)|
+| 3               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/3-(Con%20AUG).png)| 
 
 
 
