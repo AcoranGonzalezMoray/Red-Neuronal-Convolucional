@@ -113,7 +113,7 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 
 ### Autores
 <li>Acorán González Moray</li>
-<li>Vialard </li>
+<li>Alejandro Vialard Santana</li>
 
 
 
