@@ -36,14 +36,28 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 ## Resultados
 
 - Teniendo en cuenta lo anterior procedemos a mostrar los resultados:
+### ORIGINAL:
+| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
+| --------------- | --------------------------------|-------------------|-----------------------|-----------------------------|--------------|
+| 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9715**    |
+| 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9767**    |
+| 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9603**    |
 
-| Nº de Capas     | Nº de Filtros x Capa            | Función de Activacion | DroupOut                    | Precisión |
-| --------------- | --------------------------------|-----------------------|-----------------------------|----------|
-| 5               | 32, 64, 128, 128, 7             |relu, softmax          |0.25, 0.25, 0.5              |0.9942    |
-| 6               | 128, 128, 128, 128, 256, 7      |relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |0.9767    |
-| 7               | 32, 64, 128, 256, 512, 512, 7   |relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |0.9603    |
+
+|Configuración    |Graficas                         |
+| --------------- | --------------------------------|
+| 5               |![Image text]()                                   |
+| 6               |![Image text]()                                   |
+| 7               |![Image text]()                                   |
 
 
+
+### DATA AUGMENTATION:
+| Nº de Capas     | Nº de Filtros x Capa            | kernelSize        | Función de Activacion | DroupOut                    | **Precisión**|
+| --------------- | --------------------------------|-------------------|-----------------------|-----------------------------|--------------|
+| 5               | 32, 64, 128, 128, 7             |3x3 3x3 3xx3       |relu, softmax          |0.25, 0.25, 0.5              |**0.9942**    |
+| 6               | 128, 128, 128, 128, 256, 7      |3x3 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.5      |**0.9660**    |
+| 7               | 32, 64, 128, 256, 512, 512, 7   |5x5 3x3 3x3 3x3 3x3|relu, softmax          |0.3, 0.3, 0.3, 0.3, 0.3, 0.5 |**0.9658**    |
 
 
 
