@@ -84,6 +84,13 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 
 
 
+### Terminos y Notas del Código
+<li>Conv2D</li>
+<li>MaxPooling</li>
+<li>Dropout</li>
+<li>Overfiting</li>
+<li>UnderFiting</li>
+
 
 
 
