@@ -81,6 +81,9 @@ Probabilidad = 60% - Modificacion = Vuelta de la imagen de forma aleatoria
 | 1               |![Image text](https://github.com/AcoranGonzalezMoray/Red-Neuronal-Convolucional/blob/main/img/1-(Con%20AUG).png)|
 
 ### ANALISIS GRAFICA
+- Analisando la gráfica observamos a simple vista que no presenta un caso de overfitting o underfitting, la linea de perdida disminuye constantemente a medida que aumenta la precision de la linea de entrenamiento y validación, estas 2 ultimas aumentan a lo largo de los epochs de forma ajustada o superpuestas lo cual es un buen indicio de que el modelo se ha entrenado correctamente. Otro dato a analizar son los picos expuestos en la gráfica, estos picos son causados principalmemte por el dropout este es un metodo que desactiva un numero de neuronas de una red neuronal de forma aleatoria. En cada iteración de la red neuronal dropout desactivara diferentes neuronas lo que obliga a las neuronas cercanas a no depender tanto de las neuronas desactivadas. 
+
+- Si continuamos con la matriz de confución el mapa de calor forma un diagonal, lo cual indica que ha acertado la gran mayoria de predicciones,excepto en algunos casos como por ejemplo el caso 2 falla 3 predicciones.
 
 ### RESTO DE GRAFICAS QUE PRESENTAN CLARAMENTE UN MODELO DE OVERFITTING
 - Si miramos el comportamiento general de estas gráficas vemos que son el característico perfecto de un modelo que presenta Overfitting. Por un lado la Accuracy de los datos de entrenamiento aumenta linealmente con las epochs, hasta alcanzar casi el 100%, mientras que la Accuracy de los datos de validación se detiene alrededor del 80% y a partir de aquí se mantiene constante a lo largo de las epochs.
