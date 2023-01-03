@@ -4,7 +4,7 @@
 Para la realización de este proyecto se ha utilizado el siguiente dataset: ```https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset```
 Originalmente consta de 15000 imágenes de entrenamiento, 3000 para testing y otras 3000 de validación donde estaban repartidas en 15 tipos de vegetales; sin embargo, hemos reducido el numero de clases a   7 quedándonos con ```Zanahoria Papaya Tomate Papa Pimiento Brócoli  Calabaza.```  con 500 imagenes por cada clase obteniendo finalmente 3500 imagenes (2800 para entrenamiento & 700 para validación) Tras ver e indagar en este repositorio de imágenes concluimos en que era idóneo para trabajar con él.
 
-
+ 
 ## Entrenamiento
 Aqui debemos separar 2 versiones:
 
